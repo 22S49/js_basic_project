@@ -1,7 +1,8 @@
 # Todo 웹 문서 구현
 
 구글 Tasks를 참고해 만든 Todo 웹 문서 구현 기초 프로젝트입니다.   
-HTML, Tailwind CSS, JavaScript로 만들었고, 데이터는 브라우저 localStorage에 저장합니다.
+- HTML, Tailwind CSS, JavaScript 조합으로 구현
+- 할 일 데이터는 브라우저 localStorage 에 저장
 
 <br>
 
