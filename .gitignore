@@ -4,6 +4,7 @@ Todo_앱_기획서.md
 # 편집기/도구 자동 생성 폴더
 .specstory/
 .claude/
+.vscode/
 
 # 운영체제 파일
 .DS_Store
