@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo 저장 데이터 확인</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap">
+  <link rel="icon" href="https://www.gstatic.com/images/branding/productlogos/tasks_2026/v2/ico/tasks_2026_32dp.ico">
+</head>
+
+<body class="bg-gray-100 min-h-screen p-6">
+
+  <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-6">
+    <h1 class="text-xl font-bold mb-1">저장 데이터 확인</h1>
+    <p class="text-sm text-gray-500 mb-4">
+      localStorage의 <code id="key-name"></code> 값을 0.5초마다 읽어서 보여줍니다.<br>
+      index.html을 다른 탭에 열어 두고 할 일을 바꿔 보세요.
+    </p>
+
+    <!-- 요약 -->
+    <div class="flex gap-4 text-sm mb-4">
+      <span>전체 <b id="total-count">0</b>개</span>
+      <span>완료 <b id="done-count">0</b>개</span>
+      <span class="text-gray-500">마지막 변경: <span id="updated-at">-</span></span>
+    </div>
+
+    <!-- 저장된 값 (JSON) -->
+    <pre id="output" class="bg-gray-900 text-green-300 text-xs rounded-lg p-4 overflow-auto max-h-[28rem]"></pre>
+  </div>
+
+  <script src="js/debug.js"></script>
+</body>
+
+</html>

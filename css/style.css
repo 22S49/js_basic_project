@@ -1,0 +1,47 @@
+/* 폰트 설정 */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 팝업: 화면 전체를 어둡게 덮고 가운데에 내용을 보여줌 */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hidden 클래스가 popup의 display:flex보다 우선하도록 */
+.popup.hidden {
+  display: none;
+}
+
+/* 완료 체크 시 나타나는 따봉: 화면 가운데에서 커졌다가 위로 떠오르며 사라짐 */
+#thumb {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  font-size: 64px;
+  pointer-events: none;   /* 클릭을 가로막지 않게 */
+  animation: thumb-up 1s ease-out forwards;   /* forwards: 끝난 모양(투명)에서 멈춤 */
+}
+
+@keyframes thumb-up {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -150%) scale(1);
+  }
+}
