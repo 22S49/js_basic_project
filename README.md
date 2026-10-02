@@ -11,7 +11,7 @@
 `index.html`을 브라우저로 엽니다.  
 
 저장된 데이터를 보고 싶으면 `index.html`과 같은 방식으로  `debug.html`을 다른 탭에 열면 됩니다.  
-할 일 내역이 업데이트될 때마다 0.5초 안에 화면이 갱신됩니다.
+할 일 내역이 업데이트될 때마다 0.5초 안에 화면이 갱신됩니다. (`debug.html`은 claude가 생성)
 
 <br>
 
@@ -21,7 +21,7 @@
 index.html      화면 구조와 Tailwind 연결
 debug.html      저장 데이터 확인용 페이지
 js/todo.js      DOM 동작과 데이터 저장
-js/debug.js     debug.html 동작
+js/debug.js     debug.html 동작 (by claude)
 css/style.css   추가 스타일 (팝업, 따봉 애니메이션, 폰트)
 ```
 <br>
